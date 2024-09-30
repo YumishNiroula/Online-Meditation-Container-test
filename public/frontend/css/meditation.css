@@ -1,0 +1,622 @@
+h1,
+h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+    font-family: montserrat;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+}
+
+.hero-image {
+    /*background-color: ;*/
+    text-align: center;
+    /*background-image: url();*/
+}
+
+/* Hero style */
+
+body,
+html {
+    height: 100%;
+}
+
+/* The hero image */
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    /* Set a specific height */
+    height: 100%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+/* .hero-video {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; 
+} */
+
+.hero-wo {
+    pointer-events: none;
+    /* 阻止视频元素接收鼠标事件 */
+}
+
+.hero-wo img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mypic {
+    border-radius: 150%;
+    height: 180px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sect3 {
+    padding: 100px;
+}
+
+#logo1 {
+    width: 70px;
+    height: 70px;
+    -webkit-filter: drop-shadow(8px 8px 10px green);
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+#contactme {
+    align-items: center;
+}
+
+#cardimg {
+    -webkit-filter: drop-shadow(8px 8px 10px green);
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+.icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Carusel style*/
+
+.navbar-brand {
+    font-family: "Notable", sans-serif;
+    font-size: x-large;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.space {
+    padding: 20px;
+}
+
+#mypic2 {
+    border-radius: 50%;
+    height: 180px;
+    width: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    -webkit-filter: drop-shadow(8px 8px 10px green);
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+#img1 {
+    -webkit-filter: drop-shadow(8px 8px 10px blue);
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+.center {
+    margin: 0;
+    float: none;
+    text-align: center;
+}
+
+.background {
+    background: #ada996;
+    /* fallback for old browsers */
+    /*  */
+    background: -webkit-linear-gradient(
+        to right,
+        #eaeaea,
+        #dbdbdb,
+        #f2f2f2,
+        #ada996
+    );
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    color: black;
+}
+
+.centericons {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: ; */
+    color: white;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.Companies {
+    background-color: lightgray;
+    padding: 6%;
+}
+
+.card-title {
+    font-size: 15px;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid darkgrey;
+}
+
+.custom-button {
+    position: fixed;
+    /* 设置绝对定位 */
+    background-color: transparent;
+    /* 透明背景 */
+    border: none;
+    /* 白色边框 */
+    color: white;
+    /* 白色字体 */
+    padding: 10px 20px;
+    /* 按钮内边距 */
+    font-size: 15px;
+    /* 字体大小 */
+    cursor: pointer;
+    /* 鼠标悬停样式 */
+    transition: all 1.5s ease;
+    /* 过渡效果 */
+}
+
+.custom-button:hover {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.custom-button button::before,
+.custom-button button::after {
+    content: "Go To The Forest";
+    /* 设置悬停时要显示的文本 */
+    opacity: 0;
+    /* 设置初始透明度为0 */
+    transition: opacity 1.5s;
+    /* 添加过渡效果 */
+    position: absolute;
+    /* 设置绝对定位 */
+    top: 100%;
+    /* 将文本定位到按钮上方 */
+    left: 50%;
+    /* 将文本定位到按钮的水平中间位置 */
+    transform: translateX(-50%);
+    /* 通过 transform 属性来调整文本的位置 */
+    color: #ffffff;
+    /* 设定文本颜色为白色 */
+    background-color: transparent;
+    /* 设定文本背景色为透明 */
+    padding: 5px 10px;
+    /* 设定文本内边距 */
+    border-radius: 5px;
+    /* 设定文本边框圆角 */
+    font-size: 16px;
+    /* 设定文本字体大小 */
+    width: 150px;
+    /* 增加文本框的宽度 */
+}
+
+.custom-button:hover button::before,
+.custom-button:hover button::after {
+    width: 150px;
+    /* 增加文本框的宽度 */
+    opacity: 1;
+    /* 悬停时透明度为1，显示文本 */
+}
+
+.custom-button1 {
+    position: fixed;
+    /* 设置绝对定位 */
+    background-color: transparent;
+    /* 透明背景 */
+    border: none;
+    /* 白色边框 */
+    color: transparent;
+    /* 白色字体 */
+    padding: 10px 20px;
+    /* 按钮内边距 */
+    font-size: 15px;
+    /* 字体大小 */
+    cursor: pointer;
+    /* 鼠标悬停样式 */
+    transition: all 1.5s ease;
+    /* 过渡效果 */
+}
+
+.custom-button1:hover {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.custom-button1 button::before,
+.custom-button1 button::after {
+    content: "Go To The Lake";
+    /* 设置悬停时要显示的文本 */
+    opacity: 0;
+    /* 设置初始透明度为0 */
+    transition: opacity 1.5s;
+    /* 添加过渡效果 */
+    position: absolute;
+    /* 设置绝对定位 */
+    top: 100%;
+    /* 将文本定位到按钮上方 */
+    left: 50%;
+    /* 将文本定位到按钮的水平中间位置 */
+    transform: translateX(-50%);
+    /* 通过 transform 属性来调整文本的位置 */
+    color: #ffffff;
+    /* 设定文本颜色为白色 */
+    background-color: transparent;
+    /* 设定文本背景色为透明 */
+    padding: 5px 10px;
+    /* 设定文本内边距 */
+    border-radius: 5px;
+    /* 设定文本边框圆角 */
+    font-size: 16px;
+    /* 设定文本字体大小 */
+    width: 150px;
+    /* 增加文本框的宽度 */
+}
+
+.custom-button1:hover button::before,
+.custom-button1:hover button::after {
+    width: 150px;
+    /* 增加文本框的宽度 */
+    opacity: 1;
+    /* 悬停时透明度为1，显示文本 */
+}
+
+.custom-button-bottom {
+    position: absolute;
+}
+
+.custom-button-main {
+    background-color: transparent;
+    /* 透明背景 */
+    border: 2px solid transparent;
+    /* 白色边框 */
+    color: white;
+    /* 白色字体 */
+    padding: 10px 20px;
+    /* 按钮内边距 */
+    font-size: 16px;
+    /* 字体大小 */
+    cursor: pointer;
+    /* 鼠标悬停样式 */
+}
+
+.custom-button-mainn:hover {
+    background-color: transparent;
+    color: white;
+    /* border: 2px solid white; */
+}
+
+.btn:hover {
+    color: white !important;
+}
+
+.setting-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.img-font-box {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.img-font-box:hover {
+    opacity: 1;
+}
+
+.return-home-box {
+    position: absolute;
+}
+
+.titme-hover:hover {
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: rgba(55, 59, 89, 0.5) !important;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+.flex-center {
+    color: #fff;
+}
+
+.color-btn {
+    background-color: rgba(55, 59, 89, 0.5) !important;
+}
+
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 50px;
+    opacity: 1;
+}
+
+.input-group {
+    width: 150px;
+}
+
+.flex-box {
+}
+
+.start-img:hover {
+    cursor: pointer;
+}
+
+.font-style {
+    color: #fff;
+    cursor: pointer;
+}
+
+#container-countdown {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    width: 100px;
+}
+.is-hied:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.is-hied {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.alertMsg-head {
+    border-bottom: none !important;
+    padding: 0 !important;
+}
+
+.alertMsg-footer {
+    border-top: none !important;
+    padding: 0 !important;
+    justify-content: center !important;
+}
+
+.custom-button2 {
+    position: fixed;
+    /* 设置绝对定位 */
+    background-color: transparent;
+    /* 透明背景 */
+    border: none;
+    /* 白色边框 */
+    color: transparent;
+    /* 白色字体 */
+    padding: 10px 20px;
+    /* 按钮内边距 */
+    font-size: 15px;
+    /* 字体大小 */
+    cursor: pointer;
+    /* 鼠标悬停样式 */
+    transition: all 1s ease;
+    /* 过渡效果 */
+}
+
+.custom-button2:hover {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.custom-button2 button::before,
+.custom-button2 button::after {
+    content: "Go To The Cloud";
+    /* 设置悬停时要显示的文本 */
+    opacity: 0;
+    /* 设置初始透明度为0 */
+    transition: opacity 1.5s;
+    /* 添加过渡效果 */
+    position: absolute;
+    /* 设置绝对定位 */
+    top: 100%;
+    /* 将文本定位到按钮上方 */
+    left: 50%;
+    /* 将文本定位到按钮的水平中间位置 */
+    transform: translateX(-50%);
+    /* 通过 transform 属性来调整文本的位置 */
+    color: #ffffff;
+    /* 设定文本颜色为白色 */
+    background-color: transparent;
+    /* 设定文本背景色为透明 */
+    padding: 5px 10px;
+    /* 设定文本内边距 */
+    border-radius: 5px;
+    /* 设定文本边框圆角 */
+    font-size: 16px;
+    /* 设定文本字体大小 */
+    width: 150px;
+    /* 增加文本框的宽度 */
+}
+
+.custom-button2:hover button::before,
+.custom-button2:hover button::after {
+    width: 150px;
+    /* 增加文本框的宽度 */
+    opacity: 1;
+    /* 悬停时透明度为1，显示文本 */
+}
+
+.hero-wo video::-webkit-media-controls {
+    display: none !important;
+}
+.order-box {
+    position: fixed;
+    right: 0;
+    display: flex;
+}
+
+.order-box div {
+    margin-right: 10px;
+}
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(55, 59, 89, 0.5);
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 0 !important;
+}
+
+.order-btn :hover {
+    color: white;
+}
+.form-control {
+    width: 400px;
+}
+
+/* .modal-body {
+  display: flex;
+} */
+
+.flex-box {
+    margin: 0 auto;
+    margin-left: 80px;
+}
+
+.col-sm-2 {
+    width: 200px;
+}
+
+.col-form-label {
+    width: 350px;
+}
+.table-dark {
+    background-color: rgba(55, 59, 89, 0.5) !important;
+}
+
+#testTable {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(55, 59, 89, 0.5) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(55, 59, 89, 0.5) !important;
+    border-radius: 5px;
+}
+.flex-box {
+    display: flex;
+}
+
+.flex-center {
+    margin-left: 50px;
+    color: #fff;
+}
+
+.title {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+.centre-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #fff;
+}
+.modal {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    height: auto !important;
+}
+.checkout {
+    padding: 20px 0;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+}
+.label {
+    margin-right: 10px !important;
+}
+input[type="radio"] {
+    width: 15px !important;
+    height: 15px !important;
+}

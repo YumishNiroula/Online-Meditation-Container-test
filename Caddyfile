@@ -1,0 +1,13 @@
+:80 {
+    # Set the root directory to the public folder of Laravel
+    root * /app/public
+
+    # Use built-in PHP handling
+    php_fastcgi 127.0.0.1:9000
+
+    # Enable compression (optional)
+    encode zstd br gzip
+
+    # Serve static assets
+    file_server
+}
